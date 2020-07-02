@@ -1,0 +1,15 @@
+<head>
+    <title>장고 스케줄 앱 과제</title>
+</head>
+
+<body>
+    <h1>스케줄앱</h1>
+    {% for schedule in schedules.all %}
+        <div>
+            <h2>{{schedule.title}}</h2>
+            <p>{{schedule.memo}}</p>
+            <p>{{schedule.schedule_date}}</p>
+            <p>{{schedule.publish_date}}</p>
+        </div>
+    {% endfor %}
+</body>
